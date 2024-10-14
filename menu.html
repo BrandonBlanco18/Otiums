@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercancia</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icons8-favicon-16.png">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1 class="li_items">MENU</h1>
+        <ul class="menu-item">
+          <li class="li_items"><a href="#">PRODUCTOS</a></li>
+          <li class="li_items"><a href="/clientes.html">CLIENTES</a></li>
+          <li class="li_items"><a href="#">USUARIOS</a></li>
+          <li class="li_items"><a href="#">FACTURA</a></li>
+          <li class="li_items"><a href="/informes.html">INFORMES</a></li>
+          <li class="li_items"><a href="#">REPORTES</a></li>
+          <li class="li_items"><a href="#">CONFIGURACION</a></li>
+        </ul>
+      </div>
+  
+      <div class="content">        
+        <h2>REGISTRAR MERCANCIA</h2>
+        <div class="form-container">
+          <form action="registar">
+          <label for="codigo">Codigo:</label>
+          <input type="text" id="codigo" class="form-input">
+          <label for="descripcion">Descripcion:</label>
+          <input type="text" id="descripcion" class="form-input">
+          <label for="cantidad">Cantidad:</label>
+          <input type="text" id="cantidad" class="form-input">
+          <label for="precio">Precio:</label>
+          <input type="text" id="precio" class="form-input">
+          <button class="search-button">Agregar</button>
+        </form>
+        </div>
+  
+      <div class="search-bar">
+          <input type="text" placeholder="Buscar producto" class="form-input">
+          <button class="btn-primary_2">Buscar</button>
+      </div>
+  
+        <table>
+        <thead>
+          <tr>
+            <th>Codigo</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12345</td>
+            <td>Tratamiento capilar 25x12x15ml</td>
+            <td>18</td>
+            <td>$2.500</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>23451</td>
+            <td>Crema de peinar 24x12x300ml</td>
+            <td>24</td>
+            <td>$15.000</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>22345</td>
+            <td>Shampoo multi 12x6x510ml</td>
+            <td>13</td>
+            <td>$16.200</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>4567</td>
+            <td>Desodorante Clinical 18x10x50gr</td>
+            <td>8</td>
+            <td>$22.500</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>98776</td>
+            <td>Talco para pies 12x12x70gr</td>
+            <td>10</td>
+            <td>$9.500</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+  </html>

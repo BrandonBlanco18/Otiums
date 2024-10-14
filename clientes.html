@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercancia</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icons8-favicon-16.png">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1 class="li_items">MENU</h1>
+        <ul class="menu-item">
+          <li class="li_items"><a href="/menu1.html">PRODUCTOS</a></li>
+          <li class="li_items"><a href="#">CLIENTES</a></li>
+          <li class="li_items"><a href="#">USUARIOS</a></li>
+          <li class="li_items"><a href="#">FACTURA</a></li>
+          <li class="li_items"><a href="/informes.html">INFORMES</a></li>
+          <li class="li_items"><a href="#">REPORTES</a></li>
+          <li class="li_items"><a href="#">CONFIGURACION</a></li>
+        </ul>
+      </div>
+  
+      <div class="content">        
+        <h2>CLIENTES</h2>
+        <div class="form-container">
+          <form action="registar">
+          <label for="codigo">Nombre:</label>
+          <input type="text" id="registro" class="form-input">
+          <label for="descripcion">Identificacion:</label>
+          <input type="number" id="registro" class="form-input">
+          <label for="cantidad">Tipo de Cliente:</label>
+          <input type="text" id="registro" class="form-input">
+          <label for="precio">Direccion:</label>
+          <input type="text" id="registro" class="form-input">
+          <label for="codigo">Telefono:</label>
+          <input type="number" id="registro" class="form-input">
+          <label for="codigo">Correo:</label>
+          <input type="email" id="registro" class="form-input">
+          <button class="search-button">Agregar</button>
+        </form>
+        </div>
+  
+      <div class="search-bar">
+          <input type="text" placeholder="Buscar producto" class="form-input">
+          <button class="btn-primary_2">Buscar</button>
+      </div>
+  
+        <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Tipo de Cliente</th>
+            <th>Correo</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>91.111.111</td>
+            <td>Fernando Suarez</td>
+            <td>3115225522</td>
+            <td>PN</td>
+            <td>Fernandos@gmail.com</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>9008052526</td>
+            <td>Imversiones le Dorado</td>
+            <td>6077852525/3112536633</td>
+            <td>PJ</td>
+            <td>invdorado@gmail.com</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>3725896</td>
+            <td>Juana Perez</td>
+            <td>3206969879</td>
+            <td>PN</td>
+            <td>perezjuana@gmail.com</td>
+            <td>
+              <div class="button-container">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+            
+        </tbody>
+      </table>
+      </div>
+    </div>
+  
+  </body>
+  </html>
