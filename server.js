@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();   
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 27017;
 
 // Conexión a la base de datos (reemplaza con tu URI de MongoDB)
 mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -44,13 +44,11 @@ app.post('/register', async (req, res) => {
     const newUser = new User({ username, password: hashedPassword });
     await newUser.save();
 
-    res.json({ message: 'Usuario   
- registrado exitosamente' });
-    )} catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Error al registrar el usuario' });
-  }
-});
+    res.json({ message: 'Usuario registrado exitosamente' });
+} catch (err) {
+    console.error('Error al registrar al usuario:', err);
+    res.status(500).json({ error: 'Ha ocurrido un error al procesar tu solicitud' });
+};
 
 // Ruta para iniciar sesión
 app.post('/login', async (req, res) => {
