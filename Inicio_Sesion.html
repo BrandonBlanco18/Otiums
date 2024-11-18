@@ -13,8 +13,8 @@
 <h1>OTIUM SISTEMA DE INVENTARIOS</h1>
 </head>
 <body>
-  <div class="inicio_sesion"> 
-    <form >
+  <div class="inicio_sesion" id="root"> 
+    <form id="loginForm">
       <label for="email" class="label_inicio">Email address</label>
       <input type="email" class="form-control" id="correo@correo.com" aria-describedby="emailHelp">
       
@@ -28,7 +28,8 @@
     </form>
     
   </div>
-    <script src="index.js"></script>
+    <div id="message"></div>
+    <script src="./reactapp/src/loginForm.js"></script>
 </body>
 <footer>
      
